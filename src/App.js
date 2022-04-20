@@ -1,14 +1,17 @@
-import logo from './logo.svg';
+import logoqori from './logo_qori.svg';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+
 
 function App() {
-  return (
+  let styles = {
+    backgroundColor: "#88d"
+  }
+  return (  
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      <Navbar/>
+      <header style={styles} className="App-header">
+        <img src={logoqori} alt="logoqori" />
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,7 +20,12 @@ function App() {
         >
           Learn React
         </a>
+        <div className="container-fluid border border-primary border-5">
+          comprobando que bootstrap está funcionando. deberia tener un borde ancho
+        </div>
+
       </header>
+      <h1>Todos los derechos reservados</h1>
     </div>
   );
 }
